@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/recruitment-portal/static/css/main.e7c29d47.chunk.css",
-    "main.js": "/recruitment-portal/static/js/main.b94acd85.chunk.js",
-    "main.js.map": "/recruitment-portal/static/js/main.b94acd85.chunk.js.map",
+    "main.js": "/recruitment-portal/static/js/main.439d8148.chunk.js",
+    "main.js.map": "/recruitment-portal/static/js/main.439d8148.chunk.js.map",
     "runtime-main.js": "/recruitment-portal/static/js/runtime-main.16262100.js",
     "runtime-main.js.map": "/recruitment-portal/static/js/runtime-main.16262100.js.map",
     "static/css/2.cc6972a9.chunk.css": "/recruitment-portal/static/css/2.cc6972a9.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.cc6972a9.chunk.css",
     "static/js/2.8aa28383.chunk.js",
     "static/css/main.e7c29d47.chunk.css",
-    "static/js/main.b94acd85.chunk.js"
+    "static/js/main.439d8148.chunk.js"
   ]
 }
