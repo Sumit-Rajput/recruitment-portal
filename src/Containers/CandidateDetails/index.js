@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { withRouter } from 'react-router';
-import { Image, Typography, Button } from 'antd';
+import { Image, Typography, Button, Space } from 'antd';
 import { APPLICATION_STATE } from '../../constants'; 
 
 const { Text } = Typography;
@@ -21,8 +21,8 @@ const CandidateDetails = ({
     history.push('/')
   }
 
-  const selected = () => {
-    updateCandidateApplicationState(matchedCandidate.id, APPLICATION_STATE.SELECTED);
+  const shortlisted = () => {
+    updateCandidateApplicationState(matchedCandidate.id, APPLICATION_STATE.SHORTLISTED);
     goBack();
   }
 
@@ -31,7 +31,7 @@ const CandidateDetails = ({
     goBack();
   }
 
-  const isSelected = matchedCandidate && matchedCandidate.state !== APPLICATION_STATE.SELECTED;
+  const isShortlisted = matchedCandidate && matchedCandidate.state !== APPLICATION_STATE.SHORTLISTED;
   const isRejected = matchedCandidate && matchedCandidate.state !== APPLICATION_STATE.REJECTED;
 
   return (
@@ -39,16 +39,17 @@ const CandidateDetails = ({
       {
         matchedCandidate ? 
         (
-          <>
+          <Space style={{ margin: 10 }}>
             <Image width={200} src={matchedCandidate.Image}/>
-            <Text strong>{matchedCandidate.name}</Text>
-            {isSelected && <Button type="primary" onClick={selected}>Selected</Button>}
-            {isRejected && <Button danger type="primary" onClick={rejected}>Rejected</Button>}
-          </>
+            <Space size="large">
+              <Text strong>{matchedCandidate.name}</Text>
+              {isShortlisted && <Button type="primary" onClick={shortlisted}>Shortlist</Button>}
+              {isRejected && <Button danger type="primary" onClick={rejected}>Reject</Button>}
+            </Space>
+          </Space>
         ) :
         <Text strong>No User Found!</Text>
       }
-      <Button onClick={goBack}>Go Back</Button>
     </div>
   );
 }

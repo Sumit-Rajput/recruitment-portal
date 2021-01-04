@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { getCandidatesData } from '../Api';
-
+import { Layout, Menu } from 'antd';
+import { Link } from 'react-router-dom';
 import './App.css';
+import { getCandidatesData } from '../Api';
 import Routes from '../Routes';
 
-
+const { Header, Content } = Layout;
 
 const App = () => {
   const [ candidates, setCandidates ] = useState([]);
@@ -26,10 +27,21 @@ const App = () => {
   }, [])
 
   return (
-    <Routes
-      candidates={candidates}
-      updateCandidateApplicationState={updateCandidateApplicationState}
-    />
+    <Layout className="layout">
+      <Header>
+        <Menu theme="dark" mode="horizontal">
+          <Menu.Item>
+            <Link to="/">Recruitment</Link>
+          </Menu.Item>
+        </Menu>
+      </Header>
+      <Content style={{ padding: '0 50px', height: 'calc(100vh - 60px)' }}>
+        <Routes
+          candidates={candidates}
+          updateCandidateApplicationState={updateCandidateApplicationState}
+        />
+      </Content>
+    </Layout>
   );
 }
 
