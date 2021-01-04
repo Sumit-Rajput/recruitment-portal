@@ -5,10 +5,12 @@ import Home from '../Containers/Home';
 import CandidateDetails from '../Containers/CandidateDetails';
 import Result from '../Containers/Result';
 
-const Routes = () => (
+const Routes = (props) => (
   <Router>
     <Switch>
-      <Route exact path={PATHS.HOME_URL} component={Home} />
+      <Route exact path={PATHS.HOME_URL}>
+        <Home candidates={props.candidates}/>
+      </Route>
       <Route path={PATHS.CANDIDATES_DETAILS} component={CandidateDetails} />
       <Route path={PATHS.SHORTLISTED} component={Result} />
       <Route path={PATHS.REJECTED} component={Result} />
