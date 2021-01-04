@@ -5,13 +5,18 @@ import Home from '../Containers/Home';
 import CandidateDetails from '../Containers/CandidateDetails';
 import Result from '../Containers/Result';
 
-const Routes = (props) => (
+const Routes = ({ candidates, updateCandidateApplicationState }) => (
   <Router>
     <Switch>
       <Route exact path={PATHS.HOME_URL}>
-        <Home candidates={props.candidates}/>
+        <Home candidates={candidates}/>
       </Route>
-      <Route path={PATHS.CANDIDATES_DETAILS} component={CandidateDetails} />
+      <Route path={PATHS.CANDIDATES_DETAILS}>
+        <CandidateDetails 
+          candidates={candidates}
+          updateCandidateApplicationState={updateCandidateApplicationState}
+        />
+      </Route>
       <Route path={PATHS.SHORTLISTED} component={Result} />
       <Route path={PATHS.REJECTED} component={Result} />
       <Redirect from="/*" to={PATHS.HOME_URL} />
