@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/recruitment-portal/static/css/main.e7c29d47.chunk.css",
+    "main.js": "/recruitment-portal/static/js/main.b94acd85.chunk.js",
+    "main.js.map": "/recruitment-portal/static/js/main.b94acd85.chunk.js.map",
+    "runtime-main.js": "/recruitment-portal/static/js/runtime-main.16262100.js",
+    "runtime-main.js.map": "/recruitment-portal/static/js/runtime-main.16262100.js.map",
+    "static/css/2.cc6972a9.chunk.css": "/recruitment-portal/static/css/2.cc6972a9.chunk.css",
+    "static/js/2.8aa28383.chunk.js": "/recruitment-portal/static/js/2.8aa28383.chunk.js",
+    "static/js/2.8aa28383.chunk.js.map": "/recruitment-portal/static/js/2.8aa28383.chunk.js.map",
+    "static/js/3.c5f1954f.chunk.js": "/recruitment-portal/static/js/3.c5f1954f.chunk.js",
+    "static/js/3.c5f1954f.chunk.js.map": "/recruitment-portal/static/js/3.c5f1954f.chunk.js.map",
+    "index.html": "/recruitment-portal/index.html",
+    "static/css/2.cc6972a9.chunk.css.map": "/recruitment-portal/static/css/2.cc6972a9.chunk.css.map",
+    "static/css/main.e7c29d47.chunk.css.map": "/recruitment-portal/static/css/main.e7c29d47.chunk.css.map",
+    "static/js/2.8aa28383.chunk.js.LICENSE.txt": "/recruitment-portal/static/js/2.8aa28383.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16262100.js",
+    "static/css/2.cc6972a9.chunk.css",
+    "static/js/2.8aa28383.chunk.js",
+    "static/css/main.e7c29d47.chunk.css",
+    "static/js/main.b94acd85.chunk.js"
+  ]
+}
